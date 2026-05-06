@@ -1,0 +1,21 @@
+#generate the file git ignore   
+# Ignore node_modules
+node_modules/
+# Ignore build output
+dist/
+
+# Ignore logs
+logs/
+# Ignore environment variables
+.env
+#terraform  
+# Ignore terraform state files
+*.tfstate
+# Ignore terraform plan output
+*.tfplan
+# Ignore terraform variables files
+*.tfvars
+# Ignore terraform override files
+override.tf
+override.tf.json
+.terraform/

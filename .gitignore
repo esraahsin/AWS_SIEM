@@ -1,12 +1,4 @@
-#generate the file git ignore   
-# Ignore node_modules
-node_modules/
-# Ignore build output
-dist/
 
-# Ignore logs
-logs/
-# Ignore environment variables
 .env
 #terraform  
 # Ignore terraform state files

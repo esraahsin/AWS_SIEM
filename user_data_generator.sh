@@ -4,9 +4,8 @@ set -xe
 apt-get update -y
 apt-get install -y python3 python3-pip
 
-pip3 install "elasticsearch==8.12.0" "faker==20.1.0" --break-system-packages
+pip3 install "elasticsearch==8.12.0" "faker==20.1.0"
 
-# Write the generator script — note: $${...} becomes ${...} after Terraform rendering
 cat > /opt/siem_generator.py << 'PYEOF'
 import os, random, time, ipaddress
 from datetime import datetime, timezone
